@@ -87,6 +87,7 @@ svg {
 circle{
   fill: black;
 }
+
 a {
   text-decoration: none;
   color: var(--color);
@@ -95,21 +96,63 @@ a {
 
 #back-button {
   border: 1px solid var(--color);
-  border-radius: 6px;
-  
+  border-radius: 15px;
+  position:absolute;
+  top:40px;
+  padding:8px 16px;
+ 
 }
 a#back-button {
-  padding: 5px;
+  /* padding: 8px; */
 
 }
  #projects-container-hr{
-  width: 82vw;
+  width:80vw;
  
  }
 
 #projects-container {
   border: 1px solid var(--color);
-  margin-top:15px;
   height: 80vh;
 }
 
+.project-item{
+  border: 1px solid var(--color);
+  text-align: center;
+}
+ h3.project-item {
+  text-align: center;
+ }
+
+
+.projects-items-container {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items:center;
+  
+}
+
+
+@media (max-width: 1140px){
+  #projects-container-hr{
+    width:70vw;
+  }
+}
+
+@media (max-width: 940px){
+  #projects-container-hr{
+    width:66vw;
+  }
+}
+
+@media(max-width: 670px) {
+  #projects-container-hr{
+    width:52vw;
+  }
+}
+
+@media(max-width: 480px) {
+  #projects-container-hr{
+    width:40vw;
+  }
+}
