@@ -1,2 +1,2 @@
 # JS30portfolio
-A JavaScript projec
+Women Who Code's 30 Day Coding Challenge
